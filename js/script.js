@@ -66,7 +66,6 @@ const hamburgerMenu = document.querySelectorAll("#hamburger-menu")
 const menu = document.getElementById("click-hammenu")
 const article = document.getElementById("article")
 const home = document.getElementById("home")
-const engross = document.getElementById("engross")
 const herSec = document.getElementById("hero-sec")
 
 menu.addEventListener("click", () => {
@@ -104,11 +103,6 @@ article.addEventListener('click', () => {
         elem.classList.remove('hamactivated');
     });
 });
-engross.addEventListener('click', () => {
-    hamburgerMenu.forEach((elem) => {
-        elem.classList.remove('hamactivated');
-    });
-});
 
 
 /*----==================Apply scroll on click=======================----- */
@@ -120,9 +114,6 @@ home.addEventListener("click", () => {
     document.body.style.overflow = 'scroll';
 })
 article.addEventListener("click", () => {
-    document.body.style.overflow = 'scroll';
-})
-engross.addEventListener("click", () => {
     document.body.style.overflow = 'scroll';
 })
 
